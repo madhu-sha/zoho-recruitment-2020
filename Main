@@ -1,20 +1,17 @@
-import java.util.*;
-public class Main
-{
-	public static void main(String[] args) {
-	    int num,i,j, minvalue;
-	    Scanner s=new Scanner (System.in);
-	    System.out.println("Enter number");
-	    num=s.nextInt();
-	    for(i=1;i <= num; i++)
-	    {
-	        for (j=1;j <= num; j++)
-	        {
-	            minvalue = i < j ? i:j;
-	            System.out.println(num - minvalue + 1);
-	        }
-	         System.out.println();
-
-	    }
-	}
+#include <iostream>
+using namespace std;
+int main()
+{int N,x,i,j,min;
+cout << "Enter number";
+cin >> x;
+N=x;
+for(i=1;i<=N;i++){
+    for(j=1;j <= N;j++){
+        min=i < j ? i : j;
+        cout <<N - min + 1;
+    
+    }
+    cout<<endl;
+}
+return 0;
 }
