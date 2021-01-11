@@ -1,0 +1,20 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    int num,i,j, minvalue;
+	    Scanner s=new Scanner (System.in);
+	    System.out.println("Enter number");
+	    num=s.nextInt();
+	    for(i=1; i<= num;i++)
+	    {
+	        for (j=1;j<=num;j++)
+	        {
+	            minvalue = i < j ? i:j;
+	            System.out.println(num - minvalue + 1);
+	        }
+	         System.out.println();
+	 
+	    }
+	}
+}
