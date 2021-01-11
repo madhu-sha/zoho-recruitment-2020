@@ -6,15 +6,15 @@ public class Main
 	    Scanner s=new Scanner (System.in);
 	    System.out.println("Enter number");
 	    num=s.nextInt();
-	    for(i=1; i<= num;i++)
+	    for(i=1;i <= num; i++)
 	    {
-	        for (j=1;j<=num;j++)
+	        for (j=1;j <= num; j++)
 	        {
 	            minvalue = i < j ? i:j;
 	            System.out.println(num - minvalue + 1);
 	        }
 	         System.out.println();
-	 
+
 	    }
 	}
 }
